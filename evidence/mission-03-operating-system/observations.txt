@@ -1,0 +1,5 @@
+OS: macOS (arm64) [redacted]
+Account: [redacted]
+Storage (/): checked via df -h /
+Processes & PIDs: checked via ps aux
+Paths & Permissions: checked via pwd, cd, and ls -la on os-practice/sample.txt (-rw-r--r--)
