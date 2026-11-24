@@ -1,0 +1,2 @@
+I am learning Terminal commands.
+I am practising file management.
