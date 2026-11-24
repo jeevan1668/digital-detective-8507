@@ -1,1 +1,4 @@
-OS practice note
+Mission 3 - Paths and Permissions Practice
+- Tested moving between mission-03-operating-system and os-practice using cd and pwd.
+- Compared a relative path (like os-practice/sample.txt) with an absolute path starting from /.
+- Checked permissions with ls -la and saw -rw-r--r-- (owner has read and write; execute is not set).
