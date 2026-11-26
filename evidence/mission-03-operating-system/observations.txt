@@ -1,5 +1,5 @@
-OS: macOS (arm64) [redacted]
-Account: [redacted]
+OS: macOS 27.2.1 (Darwin 27.2.0, arm64); account name redacted
 Storage (/): checked with `df -h /` — 460Gi total, 13Gi used, 339Gi available, 4% capacity
+System activity: checked with `top -l 1 | head -n 10` — 859 processes (2 running, 857 sleeping), 3,957 threads, 88.74% idle CPU, 15G physical memory used, 284M unused
 Processes & PIDs: checked with `ps -Ao pid,comm | head -n 12`; observed `launchd` (PID 1) and `logd` (PID 535)
-Paths & Permissions: checked with `pwd`, `cd`, and `ls -la` on `os-practice/sample.txt` (`-rw-r--r--`)
+Paths & Permissions: earlier notes record `pwd`, `cd`, and `ls -la` on `os-practice/sample.txt` (`-rw-r--r--`); verify these activities before submission
