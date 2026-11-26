@@ -1,88 +1,70 @@
-# Mission 2 – Become Comfortable with the Terminal
+# Mission 2 - Become Comfortable with the Terminal
 
-## Task Completed
+## 1. Task / objective
+Use Terminal to inspect folders, create and manage practice files, understand flags and pipes, and explain package managers.
 
-Practised basic Terminal commands, file management, command flags, pipes and package managers using macOS Terminal.
+## 2. Work completed
 
-## Task 2.1 – Basic Terminal Operations
+### Task 2.1 - Basic Terminal operations
 
-| Operation | Command | Purpose |
-|---|---|---|
-| Current directory | `pwd` | Displays the current folder path |
-| Directory listing | `ls` | Lists files and folders |
-| Detailed listing | `ls -l` | Shows file permissions, sizes and dates |
-| Change directory | `cd ..` | Moves to the parent directory |
-| Create directory | `mkdir sample-folder` | Creates a new folder |
-| Create empty file | `touch original.txt` | Creates an empty file |
-| Copy file | `cp original.txt copied.txt` | Creates a copy |
-| Rename file | `mv copied.txt renamed.txt` | Renames or moves a file |
-| Display contents | `cat original.txt` | Displays file contents |
+| Operation | Command | What it does / observation |
+| :--- | :--- | :--- |
+| Show current directory | `pwd` | Displays the current folder path. |
+| List files and folders | `ls` | Shows the items in the current folder. |
+| Detailed listing | `ls -l` | Shows details such as permissions, sizes and dates. |
+| Move to parent folder | `cd ..` | Changes the current location to its parent. |
+| Create a folder | `mkdir sample-folder` | Creates a new folder. |
+| Create an empty file | `touch original.txt` | Creates an empty file. |
+| Copy a file | `cp original.txt copied.txt` | Creates another copy of the file. |
+| Rename or move a file | `mv copied.txt renamed.txt` | Changes its name or location. |
+| Display file contents | `cat original.txt` | Prints the file's contents in Terminal. |
 
-## Task 2.2 – File Management Practice
+### Task 2.2 - File management practice
 
-Created a folder named `terminal-practice` and practised creating, editing, copying and renaming files.
+The `terminal-practice/` folder at the repository root contains the practice files. The `practice.txt` file has two lines, and `renamed-backup.txt` contains the same text.
 
-Used:
-- `echo "text" > practice.txt` to write the first line.
-- `echo "text" >> practice.txt` to append another line.
-- `cat practice.txt` to verify both lines.
-- `cp practice.txt backup.txt` to create a backup.
-- `mv backup.txt renamed-backup.txt` to rename the backup.
+- `echo "text" > practice.txt` writes text and replaces any previous contents.
+- `echo "text" >> practice.txt` adds another line at the end.
+- `cat practice.txt` displays both lines.
+- `cp practice.txt backup.txt` makes a copy.
+- `mv backup.txt renamed-backup.txt` renames the backup.
 
-**Understanding:**
+Copying leaves the original in place and creates another file. Moving changes the file's location or name. The current-directory command tells you where relative commands will apply. A directory listing helps you see which files and folders are available.
 
-The `>` operator replaces existing file contents, whereas `>>` adds new content without deleting previous lines.
+### Task 2.3 - Flags and pipes
 
-Copying creates another version of a file, while moving transfers the file to another location or changes its name.
+- `ls` shows a normal listing.
+- `ls -l` shows detailed information.
+- `ls -lah` includes hidden files and displays readable file sizes.
+- `ls -lah | head -n 5` sends the listing through a pipe to show only its first five lines.
 
-## Task 2.3 – Flags and Pipes
+Flags change a command's behavior: `-a` includes hidden files, `-l` shows details, and `-h` makes sizes easier to read. The pipe symbol (`|`) sends the output of the command on its left as input to the command on its right.
 
-Commands practised:
+### Task 2.4 - Package managers
 
-- `ls` – Normal directory listing.
-- `ls -l` – Detailed listing.
-- `ls -lah` – Includes hidden files and human-readable file sizes.
-- `ls -lah | head -n 5` – Displays only the first five lines.
+Homebrew version 7.0.9 was checked with `brew --version`. The installed-package list was viewed with `brew list`; examples included `cairo` and `openjdk`. No packages were installed or uninstalled.
 
-**Understanding:**
+A package manager helps install, update and remove software. It can also manage software dependencies, making it easier to keep tools organized.
 
-Flags modify how a command behaves. The `-a` flag includes hidden files, `-l` displays detailed information and `-h` makes file sizes easier to read.
+## 3. Commands / tools used
+- `pwd`, `ls`, `ls -l`, `cd`, `mkdir`, `touch`, `cp`, `mv`, `cat`, `echo`, `head)
+- `brew --version`, `brew list`
+- macOS Terminal, Homebrew, Git and GitHub
 
-The pipe symbol (`|`) sends the output of one command as input to another command. Here, `ls -lah` provides the listing and `head -n 5` displays its first five lines.
+## 4. My understanding
+The Terminal accepts typed commands to inspect and manage files. Flags add options to commands, and a pipe connects one command's output to another. A package manager organizes software installation and updates.
 
-## Task 2.4 – Package Managers
+## 5. Difficulties faced
+It was confusing at first to distinguish copying from moving files and replacing text from appending text.
 
-Checked Homebrew using:
+## 6. How I resolved them
+The practice files made the difference clear: `>` replaces contents, `>>` appends, `cp` keeps the source and creates a copy, and `mv` renames or relocates a file.
 
-- `brew --version`
-- `brew list`
+## 7. Evidence / files
+- `../terminal-practice/original.txt`
+- `../terminal-practice/practice.txt`
+- `../terminal-practice/renamed.txt`
+- `../terminal-practice/renamed-backup.txt`
 
-Homebrew version: 7.0.9
-
-Homebrew is a package manager for macOS. It helps users install, update and manage software packages from the Terminal. Package managers make software management easier and help maintain required dependencies.
-
-No packages were installed or uninstalled during this mission.
-
-## Tools and Commands Used
-
-- macOS Terminal
-- Homebrew
-- Git and GitHub
-
-## What I Understood
-
-I learned how to navigate directories, create and manage files, copy backups and rename files using Terminal commands.
-
-I also understood the difference between replacing and appending file contents, how command flags modify output and how pipes connect commands.
-
-I learned that package managers simplify software installation and maintenance.
-
-## Difficulties Faced
-
-Initially, understanding the difference between copying and moving files and between the `>` and `>>` operators was slightly confusing. Practising these commands helped me understand them better.
-
-## Completion Status
-
-Mission 2 – Become Comfortable with the Terminal completed.
-
-
+## 8. Commit details
+Committed as `Complete Terminal and file management mission` and pushed to GitHub.
