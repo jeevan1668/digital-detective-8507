@@ -1,5 +1,5 @@
 OS: macOS (arm64) [redacted]
 Account: [redacted]
 Storage (/): checked with `df -h /` — 460Gi total, 13Gi used, 339Gi available, 4% capacity
-Processes & PIDs: checked with `ps aux`
+Processes & PIDs: checked with `ps -Ao pid,comm | head -n 12`; observed `launchd` (PID 1) and `logd` (PID 535)
 Paths & Permissions: checked with `pwd`, `cd`, and `ls -la` on `os-practice/sample.txt` (`-rw-r--r--`)
