@@ -6,7 +6,7 @@ Explain the Git workflow, create a branch, update the root README and open a Pul
 ## 2. Work completed
 - Created the `update-about` branch from `main`.
 - Added a learning summary to the root README on the branch.
-- Opened a Pull Request from `update-about` into `main`; it remains open and unmerged.
+- Opened [Pull Request #1](https://github.com/jeevan1668/digital-detective-8507/pull/1) from `update-about` into `main`. It is open and unmerged.
 
 ## 3. Commands / tools used
 - `git init` - creates a Git repository.
@@ -18,7 +18,7 @@ Explain the Git workflow, create a branch, update the root README and open a Pul
 - `git switch` - changes the current branch.
 - `git push` - publishes local commits to a remote repository.
 - `git pull` - fetches remote changes and integrates them locally.
-- GitHub branch and Pull Request tools - publish `update-about` and propose its README change for review.
+- GitHub branch and Pull Request tools - published `update-about` and opened the review request.
 
 ## 4. My understanding
 Staging selects which changes will be included in the next commit. A commit records those staged changes in the repository history. A branch is a separate line of work where changes can be prepared without immediately changing `main`. A Pull Request asks for review of those changes and provides a place to discuss them before merging.
@@ -32,7 +32,7 @@ Not applicable.
 ## 7. Evidence / files
 - Root `README.md` on branch `update-about`
 - This README
-- Pull Request from `update-about` into `main`
+- [Pull Request #1](https://github.com/jeevan1668/digital-detective-8507/pull/1)
 
 ## 8. Commit details
-Committed as `Complete Git and GitHub collaboration mission` and pushed on `update-about`. The Pull Request is open and has not been merged.
+Committed as `Complete Git and GitHub collaboration mission` and pushed on `update-about`. Pull Request #1 remains open and unmerged.
