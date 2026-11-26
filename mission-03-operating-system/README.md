@@ -13,9 +13,7 @@
 
 - **What is a process?** A process is a program that is currently running in memory with its own execution state and system resources.
 - **What does the PID column represent?** PID stands for **Process Identifier**—a unique number assigned by the operating system to each running process so it can be tracked and managed.
-- **Two examples of running processes:**
-  1. `Google Chrome` (or another browser/editor) running in the user session.
-  2. `Terminal` / `zsh` (or background services like `WindowServer` and `coreaudiod`).
+- **Two processes visible in the Terminal snapshot:** `launchd` (PID 1) and `logd` (PID 535). These were visible when `ps -Ao pid,comm | head -n 12` was run. PIDs can change when processes restart or the computer reboots.
 
 ## Task 3.3 - Understand Paths and Permissions
 
@@ -45,7 +43,7 @@
 
 ## Commands Used
 - `pwd`, `cd`, `mkdir`, `echo`, `ls -la`
-- `uname -a`, `sw_vers`, `whoami`, `df -h /`, `top -l 1`, `ps aux`
+- `uname -a`, `sw_vers`, `whoami`, `df -h /`, `top -l 1`, `ps -Ao pid,comm | head -n 12`
 - `git status`, `git add`, `git commit`, `git push`
 
 ## Difficulties Faced
