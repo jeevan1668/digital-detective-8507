@@ -41,6 +41,10 @@ Enter a positive decimal integer when prompted. The program prints its binary an
 - Terminal and Git commands help inspect files and track changes.
 - DNS helps a browser find a server's network address.
 
+## Repository layout
+
+Each mission's notes and supporting evidence are stored inside that mission's folder. The Terminal practice folder is at the repository root. No separate root evidence folder is used.
+
 ## Completion summary
 
 - Mission 0: Completed
@@ -53,4 +57,4 @@ Enter a positive decimal integer when prompted. The program prints its binary an
 - Mission 7: Completed
 - Mission 8: Completed
 
-Each mission has its own README and a dedicated commit. The Mission 6-8 updates and final root README are pushed to branch `update-about` and are visible in [Pull Request #1](https://github.com/jeevan1668/digital-detective-8507/pull/1). It remains unmerged. Personal account and device names are redacted from public evidence.
+Each mission has its own README and a dedicated commit. Pull Request #1 documents the Mission 6 branch activity and remains open for review.
