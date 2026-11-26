@@ -1,58 +1,34 @@
 # Mission 0 - GitHub Workspace Setup
 
-## Task Completed
+## 1. Task / objective
+Create a public GitHub repository with the assignment's mission folders, a root README and a separate README for each mission.
 
-Created the Digital Detective assignment repository
-and prepared the required folder structure.
+## 2. Work completed
+- Created the public repository `digital-detective-8507`.
+- Added folders for Mission 0 through Mission 8.
+- Added the root README and mission README files.
+- Stored practice and supporting files alongside their relevant mission. There is no separate root evidence folder.
 
-Repository Name: digital-detective-8507
+## 3. Commands / tools used
+- macOS Terminal - opened the project folder and ran command-line activities.
+- Python 3.9.6 - used for the Python missions.
+- Git 2.54.0 (Apple Git-157) - tracked and pushed repository changes.
+- Visual Studio Code - edited Markdown and Python files.
+- GitHub - hosted the public repository and Pull Request.
 
-## Tools and Versions
+## 4. My understanding
+A Git repository keeps project files and records their changes. GitHub hosts a repository online so it can be shared and reviewed. Mission folders keep related notes, code and supporting evidence together.
 
-- Operating System: macOS
-- Python Version: Python 3.9.6
-- Git Version: 2.54.0 (Apple Git-157)
-- Code Editor: Visual Studio Code
-- Terminal: macOS Terminal
+## 5. Difficulties faced
+No major setup difficulties were recorded.
 
-## Folders and Files Created
+## 6. How I resolved them
+Not applicable.
 
-- mission-00-setup/
-- mission-01-computer-basics/
-- mission-02-terminal/
-- mission-03-operating-system/
-- mission-04-programs/
-- mission-05-numbers-data/
-- mission-06-git-github/
-- mission-07-networking/
-- mission-08-final-report/
-- evidence/
-- README.md
-- number_converter.py
+## 7. Evidence / files
+- Root `README.md`
+- `mission-00-setup/` through `mission-08-final-report/`
+- Root `.gitignore` and `terminal-practice/`
 
-## What is a Repository?
-
-A repository is a storage location where project files
-and their changes are maintained using Git. GitHub
-allows developers to store, manage and share repositories
-online.
-
-## Why is the Folder Structure Organised by Mission?
-
-The folders are organised according to individual
-missions to keep the assignment systematic and organised.
-Each mission has its own README file to document
-activities, observations and learning outcomes.
-
-This structure makes it easier to track progress and
-maintain separate Git commits for each mission.
-
-## Setup Difficulties
-
-No major setup difficulties were encountered during
-the initial workspace creation.
-
-## Completion Status
-
-Mission 0 workspace setup completed successfully.
-The repository is ready for the upcoming missions.
+## 8. Commit details
+The setup was committed with `Set up Digital Detective mission structure` and pushed to GitHub.
