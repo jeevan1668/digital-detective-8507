@@ -19,9 +19,10 @@ This repository documents the Digital Detective assignment: exploring computer s
 ## Topics covered
 
 - Computer hardware, software and the IPOS cycle
-- Terminal commands, files and operating-system responsibilities
-- Python programs and number representation
-- Git branches, commits, Pull Requests and networks
+- Terminal commands, file management and operating-system responsibilities
+- Python programs, number systems and character encoding
+- Git, GitHub branches and Pull Requests
+- Networks, DNS and client-server communication
 
 ## Run the number converter
 
@@ -37,8 +38,9 @@ Enter a positive decimal integer when prompted. The program prints its binary an
 ## My Learning
 
 - A computer takes input, processes it, produces output and can store the result.
-- Terminal and Git commands help inspect files and keep track of changes.
-- Binary and hexadecimal are number systems that can represent the same values in different ways.
+- Terminal and Git commands help inspect files and track changes.
+- Binary and hexadecimal represent values in different number bases.
+- DNS helps a browser find a server's network address.
 
 ## Completion summary
 
@@ -48,8 +50,8 @@ Enter a positive decimal integer when prompted. The program prints its binary an
 - Mission 3: Completed
 - Mission 4: Completed
 - Mission 5: Completed
-- Mission 6: Completed; its Pull Request is open and unmerged
-- Mission 7: In progress
-- Mission 8: In progress
+- Mission 6: Completed; Pull Request #1 is open and unmerged
+- Mission 7: Completed
+- Mission 8: Completed
 
-Each mission is documented and committed separately. Personal account and device details are redacted from public evidence.
+Each mission has its own README and a dedicated commit. The Mission 6-8 updates and final root README are pushed to branch `update-about` and are visible in [Pull Request #1](https://github.com/jeevan1668/digital-detective-8507/pull/1). It remains unmerged. Personal account and device names are redacted from public evidence.
