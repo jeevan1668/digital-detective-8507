@@ -6,7 +6,7 @@
 | :--- | :--- | :--- |
 | Operating system / system details | Identifies the OS version, kernel, and hardware architecture | macOS 27.2.1 (Darwin kernel 27.2.0) on arm64 (`uname -a`, `sw_vers`) |
 | Current account identity | Shows which user account is currently logged in | Active account: `[redacted]` (`whoami`) |
-| Available and used storage | Shows total size, used space, and free space on the volume | Root volume `/` shows 460Gi total, 13Gi used (4%), 347Gi available (`df -h /`) |
+| Available and used storage | Shows total size, used space, and free space on the volume | Root volume `/` shows 460Gi total, 13Gi used (4%), 339Gi available (`df -h /`) |
 | System activity snapshot | Shows a brief snapshot of CPU/memory load and process counts | 926 total processes (2 running, 924 sleeping), ~80.0% idle CPU, 0 swap (`top -l 1`) |
 
 ## Task 3.2 - Understand Processes
