@@ -55,7 +55,7 @@
 
 ## Evidence / files
 - `os-practice/sample.txt`
-- `evidence/mission-03-operating-system/observations.txt`
+- `observations.txt`
 
 ## Commit details
 - Corrected Mission 3 storage observation
