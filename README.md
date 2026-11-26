@@ -39,7 +39,6 @@ Enter a positive decimal integer when prompted. The program prints its binary an
 
 - A computer takes input, processes it, produces output and can store the result.
 - Terminal and Git commands help inspect files and track changes.
-- Binary and hexadecimal represent values in different number bases.
 - DNS helps a browser find a server's network address.
 
 ## Completion summary
