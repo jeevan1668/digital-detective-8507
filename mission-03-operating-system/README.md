@@ -18,17 +18,14 @@
 ## Task 3.3 - Understand Paths and Permissions
 
 ### Navigation and Paths
-- Navigating between `mission-03-operating-system` and `os-practice` using `cd` and `pwd` updates the displayed current working directory.
-- **Absolute vs. Relative Path:**
-  - **Absolute path:** Starts from `/` with the full path from root—for example, `/Users/[redacted]/digital-detective-8507/mission-03-operating-system`.
-  - **Relative path:** Relative to the current working directory—for example, `os-practice/sample.txt` from inside `mission-03-operating-system`.
+- From Terminal, `cd ../mission-03-operating-system` moved into the Mission 3 folder, and `pwd` displayed its current location.
+- **Absolute path:** Starts from `/` with the full path from root. The observed path was `/Users/[redacted]/digital-detective-8507/mission-03-operating-system`.
+- **Relative path:** Starts from the current folder. From Mission 3, `os-practice/sample.txt` refers to the practice file.
 
 ### File Permissions
-- `ls -la os-practice/sample.txt` displays `-rw-r--r--`.
-- For the **owner** (`rw-`):
-  - **Read (`r`):** Allowed—the owner can view the file's contents.
-  - **Write (`w`):** Allowed—the owner can edit or overwrite the file.
-  - **Execute (`x`):** Not allowed (`-`)—the file is not marked to run as an executable program/script.
+- `ls -l os-practice/sample.txt` displayed `-rw-r--r--`.
+- The first three permission letters, `rw-`, are for the owner: the owner can read and write the file but not execute it.
+- The next `r--) applies to the group; the final `r--` applies to everyone else. They can read, but cannot write or execute the file.
 
 ## Task 3.4 - Explain Operating-System Responsibilities
 
@@ -46,6 +43,7 @@
 - `df -h /` - checked root-volume storage
 - `top -l 1 | head -n 10` - viewed a short system-activity snapshot
 - `ps -Ao pid,comm | head -n 12` - viewed process IDs and names
+- `cd`, `pwd`, `sed`, and `ls -l` - navigated, checked the current location, redacted the username in the path, and viewed file permissions
 
 ## Difficulties Faced
 - The first `df -h /` attempt was entered at Python's `>>>` prompt and produced a syntax error. I exited Python with `exit()`, then ran the command at the Terminal prompt.
@@ -63,3 +61,4 @@
 - Corrected Mission 3 storage observation
 - Recorded privacy-safe Mission 3 storage results
 - Recorded observed Mission 3 process examples
+- Updated Mission 3 with current system snapshot
