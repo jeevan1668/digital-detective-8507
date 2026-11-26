@@ -25,7 +25,7 @@
 ### File Permissions
 - `ls -l os-practice/sample.txt` displayed `-rw-r--r--`.
 - The first three permission letters, `rw-`, are for the owner: the owner can read and write the file but not execute it.
-- The next `r--) applies to the group; the final `r--` applies to everyone else. They can read, but cannot write or execute the file.
+- The next `r--` applies to the group; the final `r--` applies to everyone else. They can read, but cannot write or execute the file.
 
 ## Task 3.4 - Explain Operating-System Responsibilities
 
