@@ -2,12 +2,7 @@
 
 ## Diwali Independent Learning Assignment
 
-This repository contains my work for the Digital Detective
-Diwali Independent Learning Assignment.
-
-The assignment focuses on understanding computer systems,
-terminal commands, operating systems, programming,
-number systems, Git, GitHub and networking.
+This repository documents the Digital Detective assignment: exploring computer systems, the Terminal, operating systems, programming, number systems, GitHub and networks.
 
 ## Mission Index
 
@@ -21,22 +16,40 @@ number systems, Git, GitHub and networking.
 8. [Mission 7 - Networking](mission-07-networking/README.md)
 9. [Mission 8 - Final Report](mission-08-final-report/README.md)
 
-## Completion Summary
+## Topics covered
+
+- Computer hardware, software and the IPOS cycle
+- Terminal commands, files and operating-system responsibilities
+- Python programs and number representation
+- Git branches, commits, Pull Requests and networks
+
+## Run the number converter
+
+From the repository root:
+
+```sh
+cd mission-05-numbers-data
+python3 number_converter.py
+```
+
+Enter a positive decimal integer when prompted. The program prints its binary and hexadecimal forms.
+
+## My Learning
+
+- A computer takes input, processes it, produces output and can store the result.
+- Terminal and Git commands help inspect files and keep track of changes.
+- Binary and hexadecimal are number systems that can represent the same values in different ways.
+
+## Completion summary
 
 - Mission 0: Completed
-- Mission 1: Pending
-- Mission 2: Pending
-- Mission 3: Pending
-- Mission 4: Pending
-- Mission 5: Pending
-- Mission 6: Pending
-- Mission 7: Pending
-- Mission 8: Pending
+- Mission 1: Completed
+- Mission 2: Completed
+- Mission 3: Completed
+- Mission 4: Completed
+- Mission 5: Completed
+- Mission 6: Completed; its Pull Request is open and unmerged
+- Mission 7: In progress
+- Mission 8: In progress
 
-Each mission will be documented and committed separately
-to maintain a clear record of progress.
-
-## Evidence
-
-Screenshots and selected outputs will be stored
-in the evidence folder.
+Each mission is documented and committed separately. Personal account and device details are redacted from public evidence.
