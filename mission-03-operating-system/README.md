@@ -1,64 +1,57 @@
 # Mission 3 - Understand the Operating System
 
-## Task 3.1 - Explore Your Operating System
+## 1. Task / objective
+Explore the operating system, processes, storage, paths and file permissions, and describe the operating system's responsibilities.
 
-| Information Explored | What It Tells You | Your Observation (Privacy-Safe) |
+## 2. Work completed
+
+### Task 3.1 - Operating system and system activity
+
+| Information explored | What it tells you | Privacy-safe observation |
 | :--- | :--- | :--- |
-| Operating system / system details | Identifies the OS version, kernel, and hardware architecture | macOS 27.2.1 (Darwin kernel 27.2.0) on arm64 (`sw_vers`, `uname -srm`) |
-| Current account identity | Shows which user account is currently logged in | The account name appeared in the Terminal prompt; it is redacted here to protect privacy. |
-| Available and used storage | Shows total size, used space, and free space on the volume | Root volume `/` shows 460Gi total, 13Gi used (4%), 339Gi available (`df -h /`) |
-| System activity snapshot | Shows a brief snapshot of CPU/memory load and process counts | `top -l 1`: 859 processes total (2 running, 857 sleeping), 3,957 threads, 88.74% idle CPU, 15G physical memory used and 284M unused. This is one snapshot and will change over time. |
+| Operating system and system details | Shows the OS version, kernel and hardware architecture | macOS 27.2.1 (Darwin 27.2.0) on arm64 |
+| Current account | Identifies the signed-in account | Account name was visible in the Terminal prompt and is redacted here. |
+| Storage | Shows total, used and available space | Root volume `/`: 460Gi total, 13Gi used, 339Gi available, 4% capacity |
+| System activity | Shows running processes, threads, CPU and memory | Snapshot: 859 processes (2 running, 857 sleeping), 3,957 threads, 88.74% idle CPU, 15G physical memory used and 284M unused |
 
-## Task 3.2 - Understand Processes
+### Task 3.2 - Processes
+A process is a program that is currently running. A PID (Process Identifier) is the number the OS uses to distinguish one running process from another. The process listing showed `launchd` (PID 1) and `logd` (PID 535). PIDs can change when a process restarts or the computer reboots.
 
-- **What is a process?** A process is a program that is currently running in memory with its own execution state and system resources.
-- **What does the PID column represent?** PID stands for **Process Identifier**—a unique number assigned by the operating system to each running process so it can be tracked and managed.
-- **Two processes visible in the Terminal snapshot:** `launchd` (PID 1) and `logd` (PID 535). These were visible when `ps -Ao pid,comm | head -n 12` was run. PIDs can change when processes restart or the computer reboots.
+### Task 3.3 - Paths and permissions
+- The redacted absolute path observed was `/Users/[redacted]/digital-detective-8507/mission-03-operating-system`.
+- From that folder, `os-practice/sample.txt` is a relative path.
+- `ls -l os-practice/sample.txt` showed `-rw-r--r--`: the owner can read and write; the group and other users can read; no one has execute permission.
 
-## Task 3.3 - Understand Paths and Permissions
+### Task 3.4 - Operating-system responsibilities
 
-### Navigation and Paths
-- From Terminal, `cd ../mission-03-operating-system` moved into the Mission 3 folder, and `pwd` displayed its current location.
-- **Absolute path:** Starts from `/` with the full path from root. The observed path was `/Users/[redacted]/digital-detective-8507/mission-03-operating-system`.
-- **Relative path:** Starts from the current folder. From Mission 3, `os-practice/sample.txt` refers to the practice file.
-
-### File Permissions
-- `ls -l os-practice/sample.txt` displayed `-rw-r--r--`.
-- The first three permission letters, `rw-`, are for the owner: the owner can read and write the file but not execute it.
-- The next `r--` applies to the group; the final `r--` applies to everyone else. They can read, but cannot write or execute the file.
-
-## Task 3.4 - Explain Operating-System Responsibilities
-
-| OS Responsibility | Your Explanation | Example |
+| Responsibility | Explanation | Example |
 | :--- | :--- | :--- |
-| Process management | Creates, schedules, pauses, and ends running programs and shares CPU time | Running browser windows alongside Terminal and background system processes |
-| Memory management | Allocates RAM to running programs and releases it when finished | Keeping the data that active apps need in memory while they run |
-| Device management | Coordinates hardware and peripherals through drivers so apps don't access hardware directly | Displaying text on the screen or taking input from the keyboard/trackpad |
-| File management | Organizes files and folders on storage and tracks where data is stored | Creating `os-practice/sample.txt` and reading/saving Markdown files in mission folders |
-| User interface / shell | Provides graphical or command-line interfaces for users to interact with the OS | Using the macOS desktop or typing commands into `zsh` in Terminal |
-| Security and permissions | Controls account access and file permissions to protect data and system stability | Restricting write/execute permissions on files and separating user accounts |
+| Process management | Starts, schedules and stops running programs | Sharing CPU time between Terminal and other apps |
+| Memory management | Gives running programs RAM and reclaims it when no longer needed | Keeping active app data available while the apps run |
+| Device management | Helps programs use connected hardware | Sending keyboard input to the computer and displaying text |
+| File management | Organizes files and folders on storage | Saving and opening `os-practice/sample.txt` |
+| User interface / shell | Provides ways for a person to interact with the computer | macOS desktop and the `zsh` shell in Terminal |
+| Security and permissions | Controls who can access files and system resources | Read/write/execute permissions on a file |
 
-## Commands Used
-- `sw_vers`, `uname -srm` - checked macOS version, kernel, and architecture
+## 3. Commands / tools used
+- `sw_vers`, `uname -srm` - checked OS version, kernel and architecture
 - `df -h /` - checked root-volume storage
-- `top -l 1 | head -n 10` - viewed a short system-activity snapshot
+- `top -l 1 | head -n 10` - viewed a short activity snapshot
 - `ps -Ao pid,comm | head -n 12` - viewed process IDs and names
-- `cd`, `pwd`, `sed`, and `ls -l` - navigated, checked the current location, redacted the username in the path, and viewed file permissions
+- `cd`, `pwd`, `sed`, and `ls -l` - navigated, checked the location, redacted the username and viewed permissions
 
-## Difficulties Faced
-- The first `df -h /` attempt was entered at Python's `>>>` prompt and produced a syntax error. I exited Python with `exit()`, then ran the command at the Terminal prompt.
-- Keeping account and device names out of public evidence.
+## 4. My understanding
+The OS manages running programs, memory, devices, files, the user interface and access permissions. An absolute path starts at `/`; a relative path starts from the current folder. In a permission string such as `-rw-r--r--`, the letters are grouped for the owner, group and other users.
 
-## How I Resolved Them
-- Exited Python and reran the command in Terminal.
-- Redacted account and device names from the public notes.
+## 5. Difficulties faced
+The first `df -h /` command was entered at Python's `>>>` prompt, which produced a syntax error. Account and device names also needed to be kept out of public notes.
 
-## Evidence / files
+## 6. How I resolved them
+Exited Python with `exit()` and ran the command at the Terminal prompt. Redacted the account and device names from the notes.
+
+## 7. Evidence / files
 - `os-practice/sample.txt`
-- `observations.txt`
+- `observations.txt` - privacy-safe system, process, path and permission results
 
-## Commit details
-- Corrected Mission 3 storage observation
-- Recorded privacy-safe Mission 3 storage results
-- Recorded observed Mission 3 process examples
-- Updated Mission 3 with current system snapshot
+## 8. Commit details
+The mission was committed as `Document operating system and file management`. Follow-up commits record the updated live observations and keep the evidence inside this mission folder.
