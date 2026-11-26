@@ -30,7 +30,7 @@ The assignment says to merge only if the instructor requests it. Pull Request #1
 - Root `README.md`
 - Mission README files from Mission 0 through Mission 8
 - `mission-05-numbers-data/number_converter.py`
-- `evidence/mission-03-operating-system/observations.txt`
+- `mission-03-operating-system/observations.txt`
 - [Pull Request #1](https://github.com/jeevan1668/digital-detective-8507/pull/1)
 
 ## 8. Commit details
