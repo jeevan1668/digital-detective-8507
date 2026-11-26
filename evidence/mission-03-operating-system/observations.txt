@@ -1,5 +1,5 @@
 OS: macOS (arm64) [redacted]
 Account: [redacted]
-Storage (/): checked via df -h /
-Processes & PIDs: checked via ps aux
-Paths & Permissions: checked via pwd, cd, and ls -la on os-practice/sample.txt (-rw-r--r--)
+Storage (/): checked with `df -h /` — 460Gi total, 13Gi used, 339Gi available, 4% capacity
+Processes & PIDs: checked with `ps aux`
+Paths & Permissions: checked with `pwd`, `cd`, and `ls -la` on `os-practice/sample.txt` (`-rw-r--r--`)
