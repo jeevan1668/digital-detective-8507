@@ -1,43 +1,44 @@
 # Mission 4 - How Programs Run
 
 ## 1. Task / objective
-Create and run a one-line Python script (`hello.py`) and compare how compilers and interpreters execute programs[cite: 27].
+Create and run a one-line Python script and compare how compilers and interpreters execute programs.
 
 ## 2. Work completed
-- Created `hello.py` inside `mission-04-programs/` printing `Hello from Python` and ran it with Python 3[cite: 27].
-- Added a comparison table and short explanation comparing compilers and interpreters[cite: 27].
+- Created `hello.py` to print `Hello from Python`.
+- Ran the script with Python 3.
+- Compared compilers and interpreters.
 
 ## 3. Commands / tools used
-- `cd` and `pwd`: Move into `mission-04-programs` and verify the working path.
-- `cat`: Create `hello.py` and `README.md`.
-- `python3 hello.py`: Run the Python program from Terminal[cite: 27].
-- `git status`, `git add`, `git commit`, `git push`: Stage, commit, and push Mission 4 changes.
+- `cd` and `pwd` - navigated to the mission folder and checked the location.
+- `cat` - created the script and README.
+- `python3 hello.py` - ran the Python script.
+- `git status`, `git add`, `git commit`, `git push` - reviewed, staged, committed and pushed changes.
 
 ## 4. My understanding
 
 ### Task 4.1 - Running `hello.py`
-Running `python3 hello.py` executes `print("Hello from Python")` and displays `Hello from Python` in Terminal[cite: 27].
+The line `print("Hello from Python")` displays `Hello from Python` in the Terminal when the script runs.
 
-### Task 4.2 - Compiler vs. Interpreter Comparison
+### Task 4.2 - Compiler vs. interpreter
 
 | Point | Compiler | Interpreter |
 | :--- | :--- | :--- |
-| When translation / execution happens | Translates source code before running the program[cite: 27] | Reads and executes instructions at runtime[cite: 27] |
-| Typical output | Compiled output or executable | Direct runtime execution and output |
-| One example | C compiler (example) | Python (`python3`) |
-| One advantage | Optimizes code ahead of execution | Runs directly without a separate compile step |
+| When execution happens | Translates source code before running the program | Reads and executes instructions at runtime |
+| Typical result | Compiled output or executable | Program runs directly through the interpreter |
+| Example | A C compiler | Python's `python3` interpreter |
+| One advantage | Can optimize the program before it runs | Makes it convenient to run and test code directly |
 
-A compiler translates source code before execution, whereas an interpreter reads and executes instructions at runtime[cite: 27]. Based on the comparison table, a compiler produces compiled output ahead of running and can optimize code beforehand, while an interpreter runs code directly at runtime for quick testing. Some language implementations also combine both approaches[cite: 27].
+Some languages and implementations combine compilation and interpretation.
 
 ## 5. Difficulties faced
-No major difficulties[cite: 31].
+No major difficulties.
 
 ## 6. How I resolved them
-Not applicable[cite: 31].
+Not applicable.
 
 ## 7. Evidence / files
-- `mission-04-programs/hello.py`[cite: 27]
-- `mission-04-programs/README.md`[cite: 27]
+- `hello.py`
+- This README
 
 ## 8. Commit details
-Committed with message `"Compare compilers and interpreters"` and pushed to `origin/main`.
+Committed as `Compare compilers and interpreters` and pushed to GitHub.
